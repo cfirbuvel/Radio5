@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>שושו</string>
+		<key>description</key>
+		<string>להיט ההכרויות החדש
+כאן תוכלו למצוא את הפרטנר שלכם ולדבר בטלפון אחד עם השני מבלי להחשף!</string>
+		<key>image_name</key>
+		<string>shushu_icon</string>
+		<key>itunes_id</key>
+		<string>1016575189</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>קקדו</string>
+		<key>description</key>
+		<string>קקדו! האפליקציה שתסגור לכם את 2015 בצחוק אחד גדול
+שגעו את החברים שלכם עם שינוי קול או עם רעשי רקע</string>
+		<key>image_name</key>
+		<string>kakado_icon</string>
+		<key>itunes_id</key>
+		<string>1053293711</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>להב</string>
+		<key>description</key>
+		<string>הדרך הקלה והנוחה להקלטת שיחות באייפון</string>
+		<key>image_name</key>
+		<string>lahav_icon</string>
+		<key>itunes_id</key>
+		<string>1044888983</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>שושו</string>
+		<key>description</key>
+		<string>להיט ההכרויות החדש
+כאן תוכלו למצוא את הפרטנר שלכם ולדבר בטלפון אחד עם השני מבלי להחשף!</string>
+		<key>image_name</key>
+		<string>shushu_icon</string>
+		<key>itunes_id</key>
+		<string>1016575189</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>קקדו</string>
+		<key>description</key>
+		<string>קקדו! האפליקציה שתסגור לכם את 2015 בצחוק אחד גדול
+שגעו את החברים שלכם עם שינוי קול או עם רעשי רקע</string>
+		<key>image_name</key>
+		<string>kakado_icon</string>
+		<key>itunes_id</key>
+		<string>1053293711</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>להב</string>
+		<key>description</key>
+		<string>הדרך הקלה והנוחה להקלטת שיחות באייפון</string>
+		<key>image_name</key>
+		<string>lahav_icon</string>
+		<key>itunes_id</key>
+		<string>1044888983</string>
+	</dict>
+</array>
+</plist>
