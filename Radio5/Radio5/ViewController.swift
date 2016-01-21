@@ -34,7 +34,7 @@ extension UIImage{
     }
 }
 
-class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
+class ViewController: UIViewController, MFMailComposeViewControllerDelegate, UIAlertViewDelegate {
     
     @IBOutlet weak var backgroungImage: UIImageView!
     @IBOutlet weak var chatPlayButton: UIButton!
@@ -97,7 +97,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
-        mailComposerVC.setToRecipients(["info.radio5@teleprime.com"])
+        mailComposerVC.setToRecipients(["lior@radio5.co.il"])
         mailComposerVC.setSubject("רדיו5 - תקלות והצעות")
         mailComposerVC.setMessageBody("רשום כאן הצעות ובאגים", isHTML: false)
         
@@ -105,8 +105,17 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     }
     
     func showSendMailErrorAlert() {
-        let sendMailErrorAlert = UIAlertController(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", preferredStyle: UIAlertControllerStyle.Alert)
-        self.navigationController?.presentViewController(sendMailErrorAlert, animated: true, completion: nil)
+        if #available(iOS 8.0, *) {
+//            let sendMailErrorAlert = UIAlertController(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", preferredStyle: UIAlertControllerStyle.Alert)
+//            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil)
+//            sendMailErrorAlert.addAction(okAction)
+//            self.navigationController?.presentViewController(sendMailErrorAlert, animated: true, completion: nil)
+        } else {
+            // Fallback on earlier versions
+            let alert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
+            alert.show()
+        }
+
     }
     
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
@@ -123,10 +132,17 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
             self.presentViewController(fbShare, animated: true, completion: nil)
             
         } else {
-            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            if #available(iOS 8.0, *) {
+                let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            } else {
+                // Fallback on earlier versions
+                let alert = UIAlertView(title: "Accounts", message: "Please login to a Facebook account to share", delegate: self, cancelButtonTitle: "", otherButtonTitles: "", "")
+                alert.show()
+            }
             
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
+
         }
     }
     
@@ -201,9 +217,6 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
         } else {
             playRadio()
         }
-        
-        
-        
     }
     
     func playRadio() {
