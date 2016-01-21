@@ -98,7 +98,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate, UIA
         mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
         mailComposerVC.setToRecipients(["lior@radio5.co.il"])
-        mailComposerVC.setSubject("רדיו5 - תקלות והצעות")
+        mailComposerVC.setSubject("אפליקציית רדיו5 - תקלות והצעות")
         mailComposerVC.setMessageBody("רשום כאן הצעות ובאגים", isHTML: false)
         
         return mailComposerVC
