@@ -220,7 +220,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate, UIA
     }
     
     func playRadio() {
-        self.player = AVPlayer(URL: NSURL(string: "http://stream.shushudate.com:4312/listen.pls")!)
+        self.player = AVPlayer(URL: NSURL(string: "http://84.94.229.99:4312/listen.pls")!)
         player?.play()
         
         chatPlayButton.setImage(UIImage(named: "pause_button"), forState: UIControlState.Normal)
