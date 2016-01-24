@@ -32,14 +32,15 @@
 		<key>image_name</key>
 		<string>lahav_icon</string>
 		<key>itunes_id</key>
-		<string>1044888983</string>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>טלמי</string>
 		<key>description</key>
-		<string>להיט ההכרויות החדש
-כאן תוכלו למצוא את הפרטנר שלכם ולדבר בטלפון אחד עם השני מבלי להחשף!</string>
+		<string>מהיום כל אחד יכול להיות חוקר פרטי!
+אפליקציה לזיהוי כל סוגי המקשרים, חיפוש מספרים ובדיקתם.
+זיהוי מספר חסום, לא מזוהה, חיפושים מתקדמים ועוד.</string>
 		<key>image_name</key>
 		<string>tellme_icon</string>
 		<key>itunes_id</key>

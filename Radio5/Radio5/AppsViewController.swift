@@ -83,28 +83,32 @@ class AppsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+
         let dict = appsArray[indexPath.row]
-        
-        let vc: SKStoreProductViewController = SKStoreProductViewController()
-        let params = [
-            SKStoreProductParameterITunesItemIdentifier:dict.productItunesId!,
-        ]
-        vc.delegate = self
-        vc.loadProductWithParameters(params, completionBlock: nil)
-        self.presentViewController(vc, animated: true) { () -> Void in }
+        showProductVCWithItunesID(dict.productItunesId)
+
     }
     
     @IBAction func appButtonTapped(sender: AppButton) {
+        
+        showProductVCWithItunesID(sender.itunesId)
+    }
+
+    func showProductVCWithItunesID(itunesID : String!){
+        if itunesID == nil{
+            return
+        }
         let vc: SKStoreProductViewController = SKStoreProductViewController()
         let params = [
-            SKStoreProductParameterITunesItemIdentifier: sender.itunesId!,
+            SKStoreProductParameterITunesItemIdentifier:itunesID,
         ]
         vc.delegate = self
-        vc.loadProductWithParameters(params, completionBlock: nil)
-        self.presentViewController(vc, animated: true) { () -> Void in }
+        vc.loadProductWithParameters(params) { (success, error) -> Void in
+            self.presentViewController(vc, animated: true) { () -> Void in }
+        }
+
     }
-    
+
     func productViewControllerDidFinish(viewController: SKStoreProductViewController) {
         viewController.dismissViewControllerAnimated(true, completion: nil)
     }
