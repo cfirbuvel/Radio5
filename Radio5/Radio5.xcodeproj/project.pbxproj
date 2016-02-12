@@ -135,6 +135,7 @@
 				TargetAttributes = {
 					2EEDCFD01C17136C0088FCD3 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = GHXT62SC5U;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -298,10 +299,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Radio5/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.crs.Radio5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ittec.radio5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -311,13 +313,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Magic Call (GHXT62SC5U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Magic Call (GHXT62SC5U)";
 				INFOPLIST_FILE = Radio5/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.crs.Radio5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ittec.radio5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7ea24a95-13a3-42f0-a4d2-e4058243501b";
+				PROVISIONING_PROFILE = "4b0e6cc4-d808-46e3-b4ce-0c197dfaa224";
 			};
 			name = Release;
 		};
