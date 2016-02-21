@@ -11,6 +11,7 @@
 		2E94EDE11C1DBB7500A3CBBA /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94EDE01C1DBB7500A3CBBA /* AppButton.swift */; };
 		2E94EDE61C1DC94400A3CBBA /* AppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94EDE51C1DC94400A3CBBA /* AppsCell.swift */; };
 		2E94EDE81C1DD34500A3CBBA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94EDE71C1DD34500A3CBBA /* Product.swift */; };
+		2EA981BC1C79EAE400196634 /* StoryboardiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA981BB1C79EAE400196634 /* StoryboardiPad.storyboard */; };
 		2EB4646E1C20455900041BDD /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EB4646D1C20455900041BDD /* apps.plist */; };
 		2EEDCFD51C17136C0088FCD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDCFD41C17136C0088FCD3 /* AppDelegate.swift */; };
 		2EEDCFD71C17136C0088FCD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDCFD61C17136C0088FCD3 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		2E94EDE01C1DBB7500A3CBBA /* AppButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		2E94EDE51C1DC94400A3CBBA /* AppsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsCell.swift; sourceTree = "<group>"; };
 		2E94EDE71C1DD34500A3CBBA /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2EA981BB1C79EAE400196634 /* StoryboardiPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardiPad.storyboard; sourceTree = "<group>"; };
 		2EB4646D1C20455900041BDD /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
 		2EEDCFD11C17136C0088FCD3 /* Radio5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radio5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EEDCFD41C17136C0088FCD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				2EEDCFD41C17136C0088FCD3 /* AppDelegate.swift */,
 				2EEDCFD81C17136C0088FCD3 /* Main.storyboard */,
+				2EA981BB1C79EAE400196634 /* StoryboardiPad.storyboard */,
 				2E94EDE41C1DC8D500A3CBBA /* Model */,
 				2E94EDE21C1DC8AC00A3CBBA /* View */,
 				2E94EDE31C1DC8B600A3CBBA /* Controller */,
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EB4646E1C20455900041BDD /* apps.plist in Resources */,
+				2EA981BC1C79EAE400196634 /* StoryboardiPad.storyboard in Resources */,
 				2EEDCFDF1C17136C0088FCD3 /* LaunchScreen.storyboard in Resources */,
 				2EEDCFDC1C17136C0088FCD3 /* Assets.xcassets in Resources */,
 				2EEDCFDA1C17136C0088FCD3 /* Main.storyboard in Resources */,
